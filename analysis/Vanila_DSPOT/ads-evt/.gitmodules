@@ -1,3 +1,0 @@
-[submodule "tests/spot_origin"]
-	path = tests/spot_origin
-	url = https://github.com/Amossys-team/SPOT
