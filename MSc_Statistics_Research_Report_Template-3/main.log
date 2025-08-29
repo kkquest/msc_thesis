@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.8)  29 AUG 2025 09:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.8)  29 AUG 2025 10:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -556,26 +556,27 @@ l.44 \begin{acknowledgements}
 [4]
 
 [5]
-Overfull \hbox (19.5794pt too wide) in paragraph at lines 227--232
+Overfull \hbox (19.5794pt too wide) in paragraph at lines 229--234
 []\OT1/cmr/m/n/10.95 Within anomaly de-tec-tion, EVT is nat-u-rally suited to iden-ti-fy-ing \OT1/cmr/m/it/10.95 tail anoma-lies\OT1/cmr/m/n/10.95 --observations
  []
 
-<../output/others/evt_tail_anomaly.png, id=118, 433.62pt x 231.264pt>
-File: ../output/others/evt_tail_anomaly.png Graphic file (type png)
-<use ../output/others/evt_tail_anomaly.png>
-Package pdftex.def Info: ../output/others/evt_tail_anomaly.png  used on input line 242.
-(pdftex.def)             Requested size: 200.76pt x 107.07083pt.
-<../output/others/evt_bulk_anomaly.png, id=120, 433.62pt x 231.264pt>
-File: ../output/others/evt_bulk_anomaly.png Graphic file (type png)
-<use ../output/others/evt_bulk_anomaly.png>
-Package pdftex.def Info: ../output/others/evt_bulk_anomaly.png  used on input line 247.
-(pdftex.def)             Requested size: 200.76pt x 107.07083pt.
 
 
 [6]
+<../output/others/evt_tail_anomaly.png, id=128, 433.62pt x 231.264pt>
+File: ../output/others/evt_tail_anomaly.png Graphic file (type png)
+<use ../output/others/evt_tail_anomaly.png>
+Package pdftex.def Info: ../output/others/evt_tail_anomaly.png  used on input line 244.
+(pdftex.def)             Requested size: 200.76pt x 107.07083pt.
+<../output/others/evt_bulk_anomaly.png, id=130, 433.62pt x 231.264pt>
+File: ../output/others/evt_bulk_anomaly.png Graphic file (type png)
+<use ../output/others/evt_bulk_anomaly.png>
+Package pdftex.def Info: ../output/others/evt_bulk_anomaly.png  used on input line 249.
+(pdftex.def)             Requested size: 200.76pt x 107.07083pt.
+
 
 [7 <../output/others/evt_tail_anomaly.png> <../output/others/evt_bulk_anomaly.png>]
-Overfull \hbox (11.82208pt too wide) in paragraph at lines 293--302
+Overfull \hbox (11.82208pt too wide) in paragraph at lines 295--304
 \OT1/cmr/m/n/10.95 which in-volves mod-elling the dis-tri-bu-tion of thresh-old ex-ceedances us-ing the GPD ([][]Balkema
  []
 
@@ -602,20 +603,20 @@ Overfull \hbox (11.82208pt too wide) in paragraph at lines 293--302
 [17]
 
 [18]
-<../output/cpu/cpu_raw_seris.png, id=349, 714.7503pt x 209.3421pt>
+<../output/cpu/cpu_raw_seris.png, id=352, 714.7503pt x 209.3421pt>
 File: ../output/cpu/cpu_raw_seris.png Graphic file (type png)
 <use ../output/cpu/cpu_raw_seris.png>
-Package pdftex.def Info: ../output/cpu/cpu_raw_seris.png  used on input line 703.
+Package pdftex.def Info: ../output/cpu/cpu_raw_seris.png  used on input line 705.
 (pdftex.def)             Requested size: 418.25372pt x 122.50456pt.
-<../output/realTweets/realTweets_raw_seris.png, id=350, 714.7503pt x 209.3421pt>
+<../output/realTweets/realTweets_raw_seris.png, id=353, 714.7503pt x 209.3421pt>
 File: ../output/realTweets/realTweets_raw_seris.png Graphic file (type png)
 <use ../output/realTweets/realTweets_raw_seris.png>
-Package pdftex.def Info: ../output/realTweets/realTweets_raw_seris.png  used on input line 704.
+Package pdftex.def Info: ../output/realTweets/realTweets_raw_seris.png  used on input line 706.
 (pdftex.def)             Requested size: 418.25372pt x 122.50456pt.
-<../output/occupancy/occupancy_raw_seris.png, id=351, 713.7867pt x 209.3421pt>
+<../output/occupancy/occupancy_raw_seris.png, id=354, 713.7867pt x 209.3421pt>
 File: ../output/occupancy/occupancy_raw_seris.png Graphic file (type png)
 <use ../output/occupancy/occupancy_raw_seris.png>
-Package pdftex.def Info: ../output/occupancy/occupancy_raw_seris.png  used on input line 705.
+Package pdftex.def Info: ../output/occupancy/occupancy_raw_seris.png  used on input line 707.
 (pdftex.def)             Requested size: 418.25372pt x 122.66747pt.
 
 
@@ -626,140 +627,141 @@ Package pdftex.def Info: ../output/occupancy/occupancy_raw_seris.png  used on in
 [21]
 
 [22]
-<../output/cpu/evt_raw_diagnostics_cpu.png, id=385, 1447.809pt x 379.1766pt>
+<../output/cpu/evt_raw_diagnostics_cpu.png, id=388, 1447.809pt x 379.1766pt>
 File: ../output/cpu/evt_raw_diagnostics_cpu.png Graphic file (type png)
 <use ../output/cpu/evt_raw_diagnostics_cpu.png>
-Package pdftex.def Info: ../output/cpu/evt_raw_diagnostics_cpu.png  used on input line 808.
+Package pdftex.def Info: ../output/cpu/evt_raw_diagnostics_cpu.png  used on input line 810.
 (pdftex.def)             Requested size: 418.25372pt x 109.53603pt.
-<../output/cpu/evt_ma_diagnostics_cpu.png, id=386, 1449.0135pt x 379.1766pt>
+<../output/cpu/evt_ma_diagnostics_cpu.png, id=389, 1449.0135pt x 379.1766pt>
 File: ../output/cpu/evt_ma_diagnostics_cpu.png Graphic file (type png)
 <use ../output/cpu/evt_ma_diagnostics_cpu.png>
-Package pdftex.def Info: ../output/cpu/evt_ma_diagnostics_cpu.png  used on input line 809.
+Package pdftex.def Info: ../output/cpu/evt_ma_diagnostics_cpu.png  used on input line 811.
 (pdftex.def)             Requested size: 418.25372pt x 109.44347pt.
-<../output/cpu/evt_prep_diagnostics_cpu.png, id=387, 1449.0135pt x 379.1766pt>
+<../output/cpu/evt_prep_diagnostics_cpu.png, id=390, 1449.0135pt x 379.1766pt>
 File: ../output/cpu/evt_prep_diagnostics_cpu.png Graphic file (type png)
 <use ../output/cpu/evt_prep_diagnostics_cpu.png>
-Package pdftex.def Info: ../output/cpu/evt_prep_diagnostics_cpu.png  used on input line 810.
+Package pdftex.def Info: ../output/cpu/evt_prep_diagnostics_cpu.png  used on input line 812.
 (pdftex.def)             Requested size: 418.25372pt x 109.44347pt.
 
 
-[23 <../output/cpu/evt_raw_diagnostics_cpu.png> <../output/cpu/evt_ma_diagnostics_cpu.png> <../output/cpu/evt_prep_diagnostics_cpu.png>]
+[23]
 <../output/realTweets/evt_raw_diagnostics_realTweets.png, id=397, 1455.036pt x 378.9357pt>
 File: ../output/realTweets/evt_raw_diagnostics_realTweets.png Graphic file (type png)
 <use ../output/realTweets/evt_raw_diagnostics_realTweets.png>
-Package pdftex.def Info: ../output/realTweets/evt_raw_diagnostics_realTweets.png  used on input line 833.
+Package pdftex.def Info: ../output/realTweets/evt_raw_diagnostics_realTweets.png  used on input line 835.
 (pdftex.def)             Requested size: 418.25372pt x 108.92293pt.
 <../output/realTweets/evt_ma_diagnostics_realTweets.png, id=398, 1454.0724pt x 378.9357pt>
 File: ../output/realTweets/evt_ma_diagnostics_realTweets.png Graphic file (type png)
 <use ../output/realTweets/evt_ma_diagnostics_realTweets.png>
-Package pdftex.def Info: ../output/realTweets/evt_ma_diagnostics_realTweets.png  used on input line 834.
+Package pdftex.def Info: ../output/realTweets/evt_ma_diagnostics_realTweets.png  used on input line 836.
 (pdftex.def)             Requested size: 418.25372pt x 108.9981pt.
 <../output/realTweets/evt_prep_diagnostics_realTweets.png, id=399, 1448.5317pt x 378.9357pt>
 File: ../output/realTweets/evt_prep_diagnostics_realTweets.png Graphic file (type png)
 <use ../output/realTweets/evt_prep_diagnostics_realTweets.png>
-Package pdftex.def Info: ../output/realTweets/evt_prep_diagnostics_realTweets.png  used on input line 835.
+Package pdftex.def Info: ../output/realTweets/evt_prep_diagnostics_realTweets.png  used on input line 837.
 (pdftex.def)             Requested size: 418.25372pt x 109.4144pt.
-<../output/occupancy/evt_raw_diagnostics_occupancy.png, id=401, 1449.0135pt x 379.1766pt>
+
+
+[24 <../output/cpu/evt_raw_diagnostics_cpu.png> <../output/cpu/evt_ma_diagnostics_cpu.png> <../output/cpu/evt_prep_diagnostics_cpu.png>]
+<../output/occupancy/evt_raw_diagnostics_occupancy.png, id=409, 1449.0135pt x 379.1766pt>
 File: ../output/occupancy/evt_raw_diagnostics_occupancy.png Graphic file (type png)
 <use ../output/occupancy/evt_raw_diagnostics_occupancy.png>
-Package pdftex.def Info: ../output/occupancy/evt_raw_diagnostics_occupancy.png  used on input line 856.
+Package pdftex.def Info: ../output/occupancy/evt_raw_diagnostics_occupancy.png  used on input line 858.
 (pdftex.def)             Requested size: 418.25372pt x 109.44347pt.
-<../output/occupancy/evt_ma_diagnostics_occupancy.png, id=402, 1449.0135pt x 379.1766pt>
+<../output/occupancy/evt_ma_diagnostics_occupancy.png, id=410, 1449.0135pt x 379.1766pt>
 File: ../output/occupancy/evt_ma_diagnostics_occupancy.png Graphic file (type png)
 <use ../output/occupancy/evt_ma_diagnostics_occupancy.png>
-Package pdftex.def Info: ../output/occupancy/evt_ma_diagnostics_occupancy.png  used on input line 857.
+Package pdftex.def Info: ../output/occupancy/evt_ma_diagnostics_occupancy.png  used on input line 859.
 (pdftex.def)             Requested size: 418.25372pt x 109.44347pt.
-<../output/occupancy/evt_prep_diagnostics_occupancy.png, id=403, 1449.0135pt x 379.1766pt>
+<../output/occupancy/evt_prep_diagnostics_occupancy.png, id=411, 1449.0135pt x 379.1766pt>
 File: ../output/occupancy/evt_prep_diagnostics_occupancy.png Graphic file (type png)
 <use ../output/occupancy/evt_prep_diagnostics_occupancy.png>
-Package pdftex.def Info: ../output/occupancy/evt_prep_diagnostics_occupancy.png  used on input line 858.
+Package pdftex.def Info: ../output/occupancy/evt_prep_diagnostics_occupancy.png  used on input line 860.
 (pdftex.def)             Requested size: 418.25372pt x 109.44347pt.
 
-
-[24]
 
 [25 <../output/realTweets/evt_raw_diagnostics_realTweets.png> <../output/realTweets/evt_ma_diagnostics_realTweets.png> <../output/realTweets/evt_prep_diagnostics_realTweets.png>]
 
 [26 <../output/occupancy/evt_raw_diagnostics_occupancy.png> <../output/occupancy/evt_ma_diagnostics_occupancy.png> <../output/occupancy/evt_prep_diagnostics_occupancy.png>]
-<../output/cpu/original_dspot_cpu.png, id=434, 578.16pt x 361.35pt>
+<../output/cpu/original_dspot_cpu.png, id=435, 578.16pt x 361.35pt>
 File: ../output/cpu/original_dspot_cpu.png Graphic file (type png)
 <use ../output/cpu/original_dspot_cpu.png>
-Package pdftex.def Info: ../output/cpu/original_dspot_cpu.png  used on input line 898.
+Package pdftex.def Info: ../output/cpu/original_dspot_cpu.png  used on input line 900.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
-<../output/cpu/preprocessed_spot_cpu.png, id=435, 578.16pt x 361.35pt>
+<../output/cpu/preprocessed_spot_cpu.png, id=436, 578.16pt x 361.35pt>
 File: ../output/cpu/preprocessed_spot_cpu.png Graphic file (type png)
 <use ../output/cpu/preprocessed_spot_cpu.png>
-Package pdftex.def Info: ../output/cpu/preprocessed_spot_cpu.png  used on input line 900.
+Package pdftex.def Info: ../output/cpu/preprocessed_spot_cpu.png  used on input line 902.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
-<../output/cpu/optimal_threshold_dspot_cpu.png, id=436, 578.16pt x 361.35pt>
+<../output/cpu/optimal_threshold_dspot_cpu.png, id=437, 578.16pt x 361.35pt>
 File: ../output/cpu/optimal_threshold_dspot_cpu.png Graphic file (type png)
 <use ../output/cpu/optimal_threshold_dspot_cpu.png>
-Package pdftex.def Info: ../output/cpu/optimal_threshold_dspot_cpu.png  used on input line 904.
+Package pdftex.def Info: ../output/cpu/optimal_threshold_dspot_cpu.png  used on input line 906.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
-<../output/cpu/optimal_threshold_preprocessed_spot_cpu.png, id=437, 578.16pt x 361.35pt>
+<../output/cpu/optimal_threshold_preprocessed_spot_cpu.png, id=438, 578.16pt x 361.35pt>
 File: ../output/cpu/optimal_threshold_preprocessed_spot_cpu.png Graphic file (type png)
 <use ../output/cpu/optimal_threshold_preprocessed_spot_cpu.png>
-Package pdftex.def Info: ../output/cpu/optimal_threshold_preprocessed_spot_cpu.png  used on input line 906.
+Package pdftex.def Info: ../output/cpu/optimal_threshold_preprocessed_spot_cpu.png  used on input line 908.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
 
 
-[27 <../output/cpu/original_dspot_cpu.png> <../output/cpu/preprocessed_spot_cpu.png> <../output/cpu/optimal_threshold_dspot_cpu.png> <../output/cpu/optimal_threshold_preprocessed_spot_cpu.png>]
-Overfull \hbox (57.7539pt too wide) in paragraph at lines 954--976
+[27]
+Overfull \hbox (57.7539pt too wide) in paragraph at lines 956--978
  [][] 
  []
 
-<../output/realTweets/original_dspot_realTweets.png, id=456, 578.16pt x 361.35pt>
+<../output/realTweets/original_dspot_realTweets.png, id=455, 578.16pt x 361.35pt>
 File: ../output/realTweets/original_dspot_realTweets.png Graphic file (type png)
 <use ../output/realTweets/original_dspot_realTweets.png>
-Package pdftex.def Info: ../output/realTweets/original_dspot_realTweets.png  used on input line 984.
+Package pdftex.def Info: ../output/realTweets/original_dspot_realTweets.png  used on input line 986.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
-<../output/realTweets/preprocessed_spot_realTweets.png, id=457, 578.16pt x 361.35pt>
+<../output/realTweets/preprocessed_spot_realTweets.png, id=456, 578.16pt x 361.35pt>
 File: ../output/realTweets/preprocessed_spot_realTweets.png Graphic file (type png)
 <use ../output/realTweets/preprocessed_spot_realTweets.png>
-Package pdftex.def Info: ../output/realTweets/preprocessed_spot_realTweets.png  used on input line 986.
+Package pdftex.def Info: ../output/realTweets/preprocessed_spot_realTweets.png  used on input line 988.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
-<../output/realTweets/optimal_threshold_dspot_realTweets.png, id=458, 578.16pt x 361.35pt>
+<../output/realTweets/optimal_threshold_dspot_realTweets.png, id=457, 578.16pt x 361.35pt>
 File: ../output/realTweets/optimal_threshold_dspot_realTweets.png Graphic file (type png)
 <use ../output/realTweets/optimal_threshold_dspot_realTweets.png>
-Package pdftex.def Info: ../output/realTweets/optimal_threshold_dspot_realTweets.png  used on input line 990.
+Package pdftex.def Info: ../output/realTweets/optimal_threshold_dspot_realTweets.png  used on input line 992.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
-<../output/realTweets/optimal_threshold_preprocessed_spot_realTweets.png, id=459, 602.7318pt x 369.5406pt>
+<../output/realTweets/optimal_threshold_preprocessed_spot_realTweets.png, id=458, 602.7318pt x 369.5406pt>
 File: ../output/realTweets/optimal_threshold_preprocessed_spot_realTweets.png Graphic file (type png)
 <use ../output/realTweets/optimal_threshold_preprocessed_spot_realTweets.png>
-Package pdftex.def Info: ../output/realTweets/optimal_threshold_preprocessed_spot_realTweets.png  used on input line 992.
+Package pdftex.def Info: ../output/realTweets/optimal_threshold_preprocessed_spot_realTweets.png  used on input line 994.
 (pdftex.def)             Requested size: 200.76pt x 123.08778pt.
 
 
-[28]
-
-[29 <../output/realTweets/original_dspot_realTweets.png> <../output/realTweets/preprocessed_spot_realTweets.png> <../output/realTweets/optimal_threshold_dspot_realTweets.png> <../output/realTweets/optimal_threshold_preprocessed_spot_realTweets.png>]
-<../output/occupancy/original_dspot_occupancy.png, id=480, 578.16pt x 361.35pt>
+[28 <../output/cpu/original_dspot_cpu.png> <../output/cpu/preprocessed_spot_cpu.png> <../output/cpu/optimal_threshold_dspot_cpu.png> <../output/cpu/optimal_threshold_preprocessed_spot_cpu.png>]
+<../output/occupancy/original_dspot_occupancy.png, id=473, 578.16pt x 361.35pt>
 File: ../output/occupancy/original_dspot_occupancy.png Graphic file (type png)
 <use ../output/occupancy/original_dspot_occupancy.png>
-Package pdftex.def Info: ../output/occupancy/original_dspot_occupancy.png  used on input line 1068.
+Package pdftex.def Info: ../output/occupancy/original_dspot_occupancy.png  used on input line 1070.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
-<../output/occupancy/preprocessed_spot_occupancy.png, id=481, 578.16pt x 361.35pt>
+<../output/occupancy/preprocessed_spot_occupancy.png, id=474, 578.16pt x 361.35pt>
 File: ../output/occupancy/preprocessed_spot_occupancy.png Graphic file (type png)
 <use ../output/occupancy/preprocessed_spot_occupancy.png>
-Package pdftex.def Info: ../output/occupancy/preprocessed_spot_occupancy.png  used on input line 1070.
+Package pdftex.def Info: ../output/occupancy/preprocessed_spot_occupancy.png  used on input line 1072.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
-<../output/occupancy/optimal_threshold_dspot_occupancy.png, id=482, 578.16pt x 361.35pt>
+<../output/occupancy/optimal_threshold_dspot_occupancy.png, id=475, 578.16pt x 361.35pt>
 File: ../output/occupancy/optimal_threshold_dspot_occupancy.png Graphic file (type png)
 <use ../output/occupancy/optimal_threshold_dspot_occupancy.png>
-Package pdftex.def Info: ../output/occupancy/optimal_threshold_dspot_occupancy.png  used on input line 1074.
+Package pdftex.def Info: ../output/occupancy/optimal_threshold_dspot_occupancy.png  used on input line 1076.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
-<../output/occupancy/optimal_threshold_preprocessed_spot_occupancy.png, id=483, 578.16pt x 361.35pt>
+<../output/occupancy/optimal_threshold_preprocessed_spot_occupancy.png, id=476, 578.16pt x 361.35pt>
 File: ../output/occupancy/optimal_threshold_preprocessed_spot_occupancy.png Graphic file (type png)
 <use ../output/occupancy/optimal_threshold_preprocessed_spot_occupancy.png>
-Package pdftex.def Info: ../output/occupancy/optimal_threshold_preprocessed_spot_occupancy.png  used on input line 1076.
+Package pdftex.def Info: ../output/occupancy/optimal_threshold_preprocessed_spot_occupancy.png  used on input line 1078.
 (pdftex.def)             Requested size: 200.76pt x 125.47089pt.
 
 
-[30]
+[29]
 
-[31 <../output/occupancy/original_dspot_occupancy.png> <../output/occupancy/preprocessed_spot_occupancy.png> <../output/occupancy/optimal_threshold_dspot_occupancy.png> <../output/occupancy/optimal_threshold_preprocessed_spot_occupancy.png>]
+[30 <../output/realTweets/original_dspot_realTweets.png> <../output/realTweets/preprocessed_spot_realTweets.png> <../output/realTweets/optimal_threshold_dspot_realTweets.png> <../output/realTweets/optimal_threshold_preprocessed_spot_realTweets.png>]
 
-[32]
+[31]
+
+[32 <../output/occupancy/original_dspot_occupancy.png> <../output/occupancy/preprocessed_spot_occupancy.png> <../output/occupancy/optimal_threshold_dspot_occupancy.png> <../output/occupancy/optimal_threshold_preprocessed_spot_occupancy.png>]
 
 [33]
 
@@ -790,16 +792,16 @@ L3 programming layer <2020/03/25>
 Here is how much of TeX's memory you used:
  16543 strings out of 471589
  322418 string characters out of 5519122
- 868432 words of memory out of 5000000
+ 871432 words of memory out of 5000000
  42783 multiletter control sequences out of 15000+600000
  637602 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  122i,20n,121p,10933b,637s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/katerynakaplunova/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></Users/katerynakaplunova/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (42 pages, 7828381 bytes).
+Output written on main.pdf (42 pages, 7828024 bytes).
 PDF statistics:
- 728 PDF objects out of 1000 (max. 8388607)
- 587 compressed objects within 6 object streams
+ 730 PDF objects out of 1000 (max. 8388607)
+ 589 compressed objects within 6 object streams
  143 named destinations out of 1000 (max. 500000)
  296 words of extra memory for PDF output out of 10000 (max. 10000000)
 

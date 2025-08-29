@@ -63,14 +63,16 @@
     flexibly but lack error-rate guarantees, EVT links alarms to probabilistic thresholds, yet its assumptions of weak 
     dependence and stationarity are rarely satisfied in real world streams.
 
-    Two methodological extensions are examined: an alternative preprocessing pipeline (combining exponential smoothing, rolling
-    variance normalisation, and seasonal differencing), and the integration of the Expected Quantile Discrepancy (EQD) criterion
-    for automated threshold selection. Their validity is assessed through a diagnostic framework of dependence and tail-model
-    checks, applied to three Numenta Anomaly Benchmark datasets (CPU, Twitter, and Traffic), each exhibiting distinct forms of
-    non-stationarity.
+    Two methodological extensions are examined in this study. First, an alternative preprocessing pipeline is introduced to 
+    transform raw data into residuals that better approximate the weak-dependence assumptions required by EVT. This pipeline 
+    combines exponential smoothing, rolling variance normalisation, and seasonal differencing to address common forms of 
+    non-stationarity in streaming data. Second, the Expected Quantile Discrepancy (EQD) criterion is integrated for automated 
+    threshold selection, replacing heuristic choices with a more principled approach. Their performance is assessed both 
+    through a diagnostic framework of dependence and tail-model checks, and through event-based evaluation on three
+    Numenta Anomaly Benchmark datasets (CPU, Twitter, and Traffic), each of which exhibits distinct forms of non-stationarity.
 
-    Results show that preprocessing has complementary strengths but clear limits. A central finding is the importance of 
-    preprocessing: EVT-based detectors only perform reliably when residual extremes come close to independence, a condition
+    Results show that preprocessing has complementary strengths but clear limits: EVT-based detectors only perform reliably 
+    when residual extremes come close to independence, a condition
     that proves difficult to achieve in practice. The study further highlights that EQD is effective only when residual 
     extremes approximate independence, and that preprocessing alone sometimes cannot eliminate clustering, underscoring 
     the need for further work.
@@ -115,23 +117,23 @@ The problem is especially acute when dealing with extremes. Because extreme even
 describe their distribution is inherently limited. This makes tail behaviour particularly vulnerable to clustering, seasonal
 effects, or regime shifts, in contrast to bulk measures such as means or variances that can be estimated more robustly. 
 Even relatively weak dependence can contaminate the tail and undermine the assumptions required for EVT. For anomaly detection
-this matters directly: a series of consecutive exceedances may reflect one genuine event rather than many, yet naively counting
-them as independent can distort the fitted model. Addressing non-stationarity is therefore a central requirement for making EVT
+this matters directly: the definition of what is anomalous is not fixed, but shifts with long-term drift or seasonal cycles.
+Addressing non-stationarity is therefore a central requirement for making EVT
 usable in streams. As we will show later, this thesis provides one of the first systematic demonstrations of the trade-off 
 between reducing dependence and preserving extremes in a streaming EVT setting, offering new insight into how preprocessing 
 choices shape robustness.
 
 Recent proposals such as SPOT and DSPOT \citep{siffer2017anomaly} show how EVT can be adapted to the streaming setting by 
 updating thresholds online and introducing simple drift corrections. These contributions were an important step forward, 
-but they also highlight the limitations of the approach. Preprocessing is deliberately simple, often limited to moving averages,
-and this is not enough when non-stationarity arises from seasonality or time-varying variance. Thresholds are usually fixed by
+but they also highlight the limitations of the approach. Preprocessing is deliberately simple, limited to moving averages,
+and this is not enough when non-stationarity arises from seasonality or time-varying variance. Moreover, thresholds are usually fixed by
 heuristic rules, which makes results sensitive to arbitrary choices. As a consequence, the question remains open: can EVT-based
 detectors be made robust in the presence of realistic, complex forms of non-stationarity?
 
 The remainder of the thesis is organised as follows. Chapter~\ref{sec:background} reviews related work in anomaly detection and introduces
 the theoretical foundations of EVT. Chapter~\ref{sec:methods} describes the methodology, including the alternative pipeline, EQD thresholding,
-and diagnostics. Chapter~\ref{sec:res} reports empirical results on three benchmark datasets. Chapter~\ref{sec:discussion} discusses implications, 
-limitations, and directions for future work, followed by a plain-language conclusion.
+and EVT diagnostics. Chapter~\ref{sec:res} reports empirical results on three benchmark datasets. Chapter~\ref{sec:discussion} discusses implications, 
+limitations, and directions for future work.
 
 In summary, this project investigates whether EVT’s interpretability and statistical guarantees can survive in the 
 non-stationary world of data streams. The results show both where these methods succeed and where they fail, and they
@@ -1134,39 +1136,18 @@ that POT-based detectors remain feasible in streaming contexts, but their reliab
 reduce dependence in the extremes. Approximate independence is not always achieved, yet the closer the exceedances come to
 this condition, the more stable and interpretable the resulting thresholds become. EQD-based threshold selection provides 
 an additional layer of stability, though only when residual extremes already approximate independence. Where this assumption
-is not met, the procedure can even deteriorate performance. This finding underlines that advances in thresholding are valuable,
-but their effectiveness ultimately hinges on how well preprocessing aligns the data with EVT’s theoretical requirements.
+is not met, the procedure can even deteriorate performance. 
 
-The empirical results show that the three benchmark datasets exhibit distinct types of non-stationarity--mean shifts in CPU,
+In more detail, the empirical results show that the three benchmark datasets exhibit distinct types of non-stationarity--mean shifts in CPU,
 clear daily cycles in Traffic, and bursty clustering in Twitter--with direct consequences for both preprocessing and the 
 validity of POT modelling. For the CPU Utilisation series, where the main issue was a single mean shift, the moving average 
 (MA) residuals were sufficient: they reduced short-range dependence and preserved a well-calibrated GPD tail fit. 
 The Traffic Occupancy dataset, by contrast, contained strong daily cycles and moderate variation in peak intensity. Here the 
 MA pipeline already yielded a reasonably good tail model, but residual dependence persisted. The alternative pipeline brought
-clearer gains, further reducing dependence among exceedances while maintaining an excellent GPD fit, and in this setting EQD
+clearer gains, further reducing dependence while maintaining an excellent GPD fit. For both preprocessing pipelines, EQD
 shortened detection delay without altering classification outcomes. The Twitter dataset was the most difficult case: both 
 preprocessing pipelines improved variance stability, but neither removed the heavy dependence and clustering of extremes, 
-and EQD then tended to worsen calibration. Taken together, these results emphasise that preprocessing has complementary 
-roles but also clear limits. POT-based detection remains viable when preprocessing succeeds in producing residual extremes 
-that are close to independent, yet the theory falters when clustering persists, as in the Twitter case.
-
-One broader lesson concerns the trade-off between independence and tail fidelity. The MA pipeline tended to preserve the 
-natural scale of extremes, at the expense of residual dependence. The alternative pipeline reduced dependence more effectively,
-but at times compressed genuine extremes, which weakened the GPD fit. This type of tension is not unique to streaming contexts:
-in classical EVT, it is well recognised that detrending or de-seasonalising a series can change the behaviour of the extremes,
-sometimes reducing the information available for tail inference if applied too strongly \citep{EastoeTawn2009}. What is novel
-here is the explicit quantification of this trade-off in a streaming setting. The results suggest that robustness depends not
-only on reducing non-stationarity but also on avoiding distortions of the very extremes that EVT seeks to model. To our 
-knowledge, this thesis provides one of the first systematic demonstrations of this trade-off in a streaming EVT setting, 
-offering a new perspective on how preprocessing choices shape the feasibility of POT-based anomaly detection.
-
-The results must also be read in light of small-sample uncertainty. Each dataset contained at most four anomaly windows, 
-meaning that Wilson confidence intervals around precision and recall estimates were often wide. These intervals should 
-therefore be interpreted as rough indicators rather than precise bounds. Even so, they remain informative: in the CPU dataset,
-the intervals already hint at systematic differences between methods, with default DSPOT variants showing consistently higher
-precision and recall than the modified pipeline. In the Twitter dataset, by contrast, the intervals largely overlapped across
-methods, reflecting that all approaches suffered from low precision driven by many false positives. Recognising these 
-limitations is important, since over-interpreting small-sample metrics risks attributing significance where there is none.
+and EQD then tended to worsen calibration.
 
 These findings connect directly to the broader anomaly-detection literature. Relative to SPOT and DSPOT 
 \citep{siffer2017anomaly}, the present results make clear that preprocessing and thresholding choices are not secondary details
@@ -1179,6 +1160,24 @@ a wider range of patterns. What they usually do not provide, however, is any cle
 together, these comparisons suggest that EVT remains competitive when anomalies manifest as extremes and preprocessing 
 succeeds in reducing dependence, while ML methods cover a broader range of behaviours at the cost of statistical guarantees.
 
+One broader lesson concerns the trade-off between independence and tail fidelity. The MA pipeline tended to preserve the 
+natural scale of extremes, at the expense of residual dependence. The alternative pipeline reduced dependence more effectively,
+but at times compressed genuine extremes, which weakened the GPD fit. This type of tension is not unique to streaming contexts:
+in classical EVT, it is well recognised that detrending, deseasonalising, or stabilising variance can alter the behaviour of 
+extremes, sometimes reducing the information available for tail inference \citep{EastoeTawn2009}. What is novel
+here is the explicit quantification of this trade-off in a streaming setting. The results suggest that robustness depends not
+only on reducing non-stationarity but also on avoiding distortions of the very extremes that EVT seeks to model. To our 
+knowledge, this thesis provides one of the first systematic demonstrations of this trade-off in a streaming EVT setting, 
+offering a new perspective on how preprocessing choices shape the feasibility of POT-based anomaly detection.
+
+The results must also be read in light of small-sample uncertainty. Each dataset contained at most four anomaly windows, 
+meaning that Wilson confidence intervals around precision and recall estimates were often wide. These intervals should 
+therefore be interpreted as rough indicators rather than precise bounds. Even so, they remain informative: in the CPU dataset,
+the intervals already hint at systematic differences between methods, with default DSPOT variants showing consistently higher
+precision and recall than the modified pipeline. In the Twitter dataset, by contrast, the intervals largely overlapped across
+methods, reflecting that all approaches suffered from low precision driven by many false positives. It is therefore important
+to interpret these results cautiously, as small-sample metrics can suggest significance where none truly exists.
+
 Three limitations of this work deserve emphasis. Foremost, the persistence of extremal clustering in the Twitter dataset shows
 that preprocessing alone cannot always deliver i.i.d.\ exceedances. Classical EVT deals with this through declustering, 
 and an online variant of that idea could bring the streaming approach closer to theoretical validity. Next, the CPU results
@@ -1190,11 +1189,9 @@ work would be valuable.
 
 A related point is the question of how thresholds relate back to the original measurement scale. In principle, 
 the EVT quantiles estimated in the stationary $z$-difference domain can be projected back into raw units. We explored
-this mapping for the enhanced preprocessing pipeline, but the resulting curves were highly sensitive to small fluctuations
+this mapping for the alternative preprocessing pipeline, but the resulting curves were highly sensitive to small fluctuations
 in the rolling mean and variance, and therefore appeared visually unstable. Since the purpose of these figures is to convey
 the detector’s behaviour clearly, we chose to present thresholds only in the transformed space where the EVT model is defined.
-Readers should therefore interpret the reported thresholds as operating in that working domain, rather than expecting a direct
-overlay on the raw signal.
 
 Looking forward, two extensions appear particularly promising. The first is to embed declustering directly into DSPOT. 
 An online runs-based rule that identifies clusters of exceedances and updates the GPD only with cluster maxima would align
@@ -1205,8 +1202,7 @@ the trade-offs between EVT’s interpretability and ML’s adaptability. Taken t
 the methodology and, at the same time, enhance its practical value.
 
 In plain terms, this work shows that statistical tools for extremes still have a place in today’s fast, evolving data streams.
-With the right preprocessing, they can provide reliable alarms with clear error rates. But they are not a silver bullet: 
-when data remain dependent or anomalies are not extreme, EVT methods can miss important signals. The challenge ahead is 
+With the right preprocessing, they can provide reliable alarms with clear error rates. The challenge ahead is 
 to combine their statistical rigour with the flexibility of newer machine-learning tools, so that anomaly detection becomes
 both trustworthy and adaptable.
 
@@ -1220,7 +1216,7 @@ The raw series and ground-truth anomaly windows used in this study are included 
 \paragraph{Reproducibility.} 
 The code developed for this thesis, including preprocessing pipelines, thresholding implementations, and evaluation 
 routines, is made openly available at:  
-\url{https://github.com/your-username/your-repo}.  
+\url{https://github.com/kkquest/msc_thesis}.  
 This repository contains scripts and instructions needed to reproduce all figures and results reported in the thesis. 
 To support readability and reproducibility, comments within the final code were edited with the help of GPT-5, while 
 the design and implementation of all methods remained the author’s own work.
